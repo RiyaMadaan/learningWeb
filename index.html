@@ -1,0 +1,119 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>My first page</title>
+        <script type = "text/javascript">
+            function displayInput(){
+              var testInput = document.getElementById("name").value;
+              if(testInput.length==0){
+                  document.getElementById("para").innerHTML="hey! you didn't typed anything";
+              }
+              else              
+                  document.getElementById("para").innerHTML=testInput;
+            }   
+
+            function myAlertMath(){
+                var userName = document.getElementById("mathInput").value;
+                alert("your number * 5 is "+ userName * 5);
+            }
+          
+            </script>
+        <style>
+            body{
+                background-color:lightgray;
+            }
+            h1,h3,h5 {
+                color:cornflowerblue;
+            }
+            h2,h4,h6 {
+                color:chocolate;
+            }
+            p {
+                color:crimson;
+            }
+            table, th {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            td {
+                border: 1px solid black;
+                color: blue;
+            }
+            </style>
+        </head>
+        <body>
+            <h3 style="color:darkslateblue; text-align: right; font-size: 80%;">Used Internal CSS</h3>
+
+            <h1>Lets see a button</h1>
+            <input type="text/" id="name">
+            <button onclick="displayInput();">Color it</button>
+            <p id="para" style="color:blue"></p>
+            <button onclick="alert('Hey pop up worked')">tap button</button>
+            <input id="mathInput", type="number/"><button onclick="myAlertMath()">multiply by 5</button>
+            <p id="test"></p>
+            
+            
+            <!-- <h3 style="color:darkslateblue; text-align: right; font-size: 80%;">Used Internal CSS</h3> -->
+           <h1>heading 1</h1>
+           <h2>heading 2</h2>
+           <h3>heading 3</h3>
+           <h4>heading 4</h4>
+           <h5>heading 5</h5>
+           <h6>heading 6</h6>
+           <p>My first paragraph..I am writing this paragraph to test paragraph tag.</p>
+           <h3 style="background-color: darksalmon; text-align: center; color: black;">Differents Fonts</h3>
+           <em>Italic style</em>
+           <p>This is my <strong>First </strong>page.</p>
+           <i>italics</i>
+
+
+           <h4 style="color: firebrick; background-color: gray; text-align: center;">LISTS:-</h4>
+           <h3 style="color: deeppink"><em>Ordered list</em></h3>
+           <ol style="color: darkolivegreen;">
+               <li>Mango</li>
+               <li>Papaya</li>
+               <li>Banana</li>
+               <li>Apple</li>
+            </ol>
+
+
+            <h3 style="color: deeppink; text-align: left;"><em>UnOrdered list</em></h3>
+            <ul style="color: darkolivegreen;">
+                <li>Mango</li>
+                <li>Papaya</li>
+                <li>Banana</li>
+                <li>Apple</li>
+             </ul>
+
+
+             <h4 style="color: indigo; text-align: center; background-color: lightcoral;">TABLES:-</h4>
+             <table style="width: 100%;">
+                <!-- Adding caption of table -->
+                <caption><strong>Information</strong></caption>
+             <tr>
+                 <th>Name</th>
+                 <th colspan="2">PhoneNo.</th>
+                 <th>City</th>
+                 </tr>
+                 <tr>
+                     <td style="text-align: center;">Riya</td>
+                     <td style="text-align: center;">687989</td>
+                     <td style="text-align: center;">6817219</td>
+                     <td style="text-align: center;">Delhi</td>
+                     </tr>
+                     <tr>
+                        <td style="text-align: center;">Rahul</td>
+                        <td style="text-align: center;">465329</td>
+                        <td style="text-align: center;">6879018</td>
+                        <td style="text-align: center;">Haryana</td>
+                        </tr> 
+                        <tr>
+                            <td style="text-align: center;">Yukti</td>
+                            <td style="text-align: center;">357269</td>
+                            <td style="text-align: center;">6879910</td>
+                            <td style="text-align: center;">Punjab</td>
+                            </tr>
+                            </table>
+
+            </body>
+        </html>
