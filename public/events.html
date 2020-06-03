@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            function mathfun(){
+            var number = document.getElementById('math').value;
+            alert("your number * 5 is " + number * 5);
+            }
+            function checkfield1(){
+                var field = document.getElementById("field1").value;
+                if(field.length<=5){
+                    document.getElementById("message1").innerHTML="too short!";
+                }
+                else
+                document.getElementById("message2").innerHTML = "too long";
+            }
+            function checkfield2(){
+                var field = document.getElementById("field2").value;
+                if(field!=""){
+                    document.getElementById("message2").innerHTML="text accepted!";
+                }
+                else
+                document.getElementById("message2").innerHTML = "you need to enter something";
+            }
+            </script>
+        <title>events</title>
+        </head>
+        <body onload = "alert('the page has been loaded, okay!')">
+            <ponclick event testing>
+                <button onclick="alert('test worked')"> click me</button>
+                <button onclick="alert('hi there')">click here</button>
+                <input id="math" type="number/"><button onclick="mathfun()">click here to multiply</button>
+                <p id = "test"></p>
+                <p>onblur event checking</p>
+                <input id="field1" type="text" onblur="checkfield1();"/><span id= "message1"></span>
+                <input id="field2" type="text" onblur="checkfield2();"/><span id="message2"></span>
+                <input id="field3" type="text/"><span id= "message3"></span>
+
+
+            </body>
+            </html>
